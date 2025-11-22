@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Databricks App Controller</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>Databricks App Controller</h1>
+  <label for="workspaceUrl">Workspace URL:</label>
+  <input id="workspaceUrl" type="text" placeholder="https://<databricks-instance>" />
+  <label for="token">Access Token:</label>
+  <input id="token" type="password" placeholder="Enter your Databricks token" />
+  <label for="appName">App Name:</label>
+  <input id="appName" type="text" placeholder="Enter Databricks app name" />
+  <div class="buttons">
+    <button onclick="startApp()">Start App</button>
+    <button onclick="stopApp()">Stop App</button>
+    <button onclick="getAppStatus()">Get Status</button>
+  </div>
+  <div id="status"></div>
+</div>
+</body>
+</html>
